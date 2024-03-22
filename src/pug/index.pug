@@ -54,9 +54,11 @@ html(lang='en')
                 .resume-section-content
                     h1.mb-0 金 太永(キム テヨン)
                     .subheading.mb-5
-                        | 韓国 · 1993年8月16日(
-                        span.text-danger 30歳
-                        | ) · 070-8532-1949 ·
+                        | 韓国 · 
+                        span.age-input 1993/08/16
+                        | (
+                        span.age-output 30
+                        |歳) · 070-8532-1949 ·
                         a(href='mailto:kinjwo1@gmail.com') kinjwo1@gmail.com
                     p.lead.mb-5
                         | Webプログラマーとして
@@ -243,4 +245,5 @@ html(lang='en')
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
 
         // Core theme JS
+        script(src='js/moment.js')
         script(src='js/scripts.js')
