@@ -38,9 +38,9 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#experience') 職務経歴
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#education') 学歴
-                    li.nav-item
                         a.nav-link.js-scroll-trigger(href='#skills') スキル
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education') 学歴
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#interests') 個人プロジェクト
                     li.nav-item
@@ -54,10 +54,9 @@ html(lang='en')
                 .resume-section-content
                     h1.mb-0 金 太永(キム テヨン)
                     .subheading.mb-5
-                        | 韓国 · 
-                        span.age-input 1993/08/16
+                        | 韓国 · 1993/08/16
                         | (
-                        span.age-output 30
+                        span.age-output(data-input='1993-08-16') 30
                         |歳) · 070-8532-1949 ·
                         a(href='mailto:kinjwo1@gmail.com') kinjwo1@gmail.com
                     p.lead.mb-5
@@ -118,6 +117,71 @@ html(lang='en')
 
             hr.m-0
 
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 スキル
+                    .subheading.mb-3 ・バックエンド
+                    ul.list-inline.dev-icons
+                        li.list-inline-item
+                            figure.figure
+                                i.fa-brands.fa-java
+                                figcaption.figure-caption.text-center java
+                        li.list-inline-item
+                            figure.figure
+                                img(src='assets/img/JUnit.svg' alt="junit")
+                                figcaption.figure-caption.text-center junit
+                        li.list-inline-item
+                            figure.figure
+                                img(src='assets/img/spring.svg' alt="spring")
+                                figcaption.figure-caption.text-center spring
+                        li.list-inline-item
+                            figure.figure
+                                img(src='assets/img/spring-jpa.png' alt="spring-jpa")
+                                figcaption.figure-caption.text-center jpa
+                        li.list-inline-item
+                            figure.figure
+                                img(src='assets/img/rest-api-icon.svg' alt="rest-api")
+                                figcaption.figure-caption.text-center rest-api
+                        li.list-inline-item
+                            figure.figure
+                                i.fa-brands.fa-php
+                                figcaption.figure-caption.text-center php
+                        li.list-inline-item
+                            figure.figure
+                                img(src='assets/img/postgresql-icon.svg' alt="postgresql-icon")
+                                figcaption.figure-caption.text-center postgresql
+                    .subheading.mb-3 ・フロントエンド
+                    ul.list-inline.dev-icons
+                        li.list-inline-item
+                            figure.figure
+                                i.fab.fa-js
+                                figcaption.figure-caption.text-center js
+                        li.list-inline-item
+                            figure.figure
+                                i.fab.fa-html5
+                                figcaption.figure-caption.text-center html
+                        li.list-inline-item
+                            figure.figure
+                                i.fab.fa-css3-alt
+                                figcaption.figure-caption.text-center css
+                    .subheading.mb-3 ・その他
+                    ul.list-inline.dev-icons
+                        li.list-inline-item
+                            figure.figure
+                                i.fab.fa-aws
+                                figcaption.figure-caption.text-center aws
+                        li.list-inline-item
+                            figure.figure
+                                img(src='assets/img/maven.svg' alt="maven")
+                                figcaption.figure-caption.text-center maven
+                        li.list-inline-item
+                            figure.figure
+                                img(src='assets/img/postman.svg' alt="postman")
+                                figcaption.figure-caption.text-center postman
+
+            hr.m-0
+
             // Education
             section#education.resume-section
                 .resume-section-content
@@ -131,59 +195,6 @@ html(lang='en')
                             p GPA: 3.3(B+)
                         .flex-shrink-0
                             span.text-primary 2019年卒
-            hr.m-0
-
-            // Skills
-            section#skills.resume-section
-                .resume-section-content
-                    h2.mb-5 スキル
-                    .subheading.mb-3 プログラミングスキル & ツール
-                    ul.list-inline.dev-icons
-                        li.list-inline-item
-                            i.fa-brands.fa-java
-                        li.list-inline-item
-                            img(src='assets/img/spring.svg' alt="spring")
-                        li.list-inline-item
-                            img(src='assets/img/spring-jpa.png' alt="spring-jpa")
-                        li.list-inline-item
-                            img(src='assets/img/rest-api-icon.svg' alt="rest-api")
-                        li.list-inline-item
-                            img(src='assets/img/postgresql-icon.svg' alt="postgresql-icon")
-                        li.list-inline-item
-                            img(src='assets/img/JUnit.svg' alt="postman")
-                        li.list-inline-item
-                            img(src='assets/img/maven.svg' alt="maven")
-                        li.list-inline-item
-                            i.fab.fa-js
-                        li.list-inline-item
-                            i.fa-brands.fa-php
-                        li.list-inline-item
-                            i.fab.fa-html5
-                        li.list-inline-item
-                            i.fab.fa-css3-alt
-                        li.list-inline-item
-                            i.fab.fa-aws
-                        li.list-inline-item
-                            img(src='assets/img/postman.svg' alt="postman")
-                    .subheading.mb-3 Workflow
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Mobile-First, Responsive Design
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Browser Testing & Debugging
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Functional Teams
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Agile Development & Scrum
-
             hr.m-0
 
             // Interests
@@ -202,7 +213,7 @@ html(lang='en')
                                 a(href='https://github.com/bittap/azusato' target="_blank") こちら
                                 | のREADMEにあります。
                         .flex-shrink-0
-                            span.text-primary 2022.1 ~ 2023.3(※CI/CD投入やコード改善は2023.3 ~2024.2)
+                            span.text-primary 2022.1 ~ 2023.3
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
