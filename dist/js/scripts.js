@@ -32,3 +32,20 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// 歳を数える。
+const calculateAge = function (from, outputTag) {
+    // 現在の年から入力値の年を引く
+    let diffYears = moment().diff(from, 'years');
+
+    outputTag.textContent = diffYears;
+}
+
+
+// 歳の出力タグ
+const outputTag = document.querySelector('.age-output');
+// 歳の入力値
+const input = outputTag.dataset.input;
+
+
+calculateAge(input, outputTag);
