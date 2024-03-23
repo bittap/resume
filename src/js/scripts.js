@@ -37,9 +37,10 @@ const calculateAge = function (from, outputTag) {
 }
 
 
-// 歳の入力値
-const input = document.querySelector('.age-input').textContent;
 // 歳の出力タグ
 const outputTag = document.querySelector('.age-output');
+// 歳の入力値
+const input = outputTag.dataset.input;
+
 
 calculateAge(input, outputTag);
