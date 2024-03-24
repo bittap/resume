@@ -54,7 +54,7 @@ html(lang='en')
                 .resume-section-content
                     h1.mb-0 金 太永(キム テヨン)
                     .subheading.mb-5
-                        | 韓国 · 1993/08/16
+                        | 韓国国籍 · 東京在住 · 1993/08/16
                         | (
                         span.age-output(data-input='1993-08-16') 30
                         |歳) · 070-8532-1949 ·
@@ -79,8 +79,69 @@ html(lang='en')
                             .subheading.mb-3 テクニカルリーダー(2023.04 ~)
                             p
                                 | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                            button.btn.btn-primary.text-light(type="button" data-bs-toggle="modal" data-bs-target="#experience-modal-3") プロジェクトの詳細を開く
+                            .modal.fade.modal-dialog-scrollable(id="experience-modal-3" tabindex="-1" aria-labelledby="experience-modal-label" aria-hidden="true")
+                                .modal-dialog.modal-xl
+                                    .modal-content
+                                        .modal-header
+                                            h1.modal-title.fs-5.Modal#experience-modal-label テクノブレイブ株式会社のプロジェクト詳細
+                                            button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+                                        .modal-body 
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    .d-flex
+                                                        div.h5 
+                                                            span 1.
+                                                            | 南関東４競馬場HPのリニューアル
+                                                        div.ms-auto 2023-05-01 ~ 2023-12-31
+                                                    .d-flex.flex-column
+                                                        div 参加工程：SD,PG,PT,IT,ST
+                                                        div スキル：Java、Velocity、Javascript、html、css、postgresql
+                                                        div 
+                                                            | プロジェクト内容：既存の
+                                                            a(href="https://www.nankankeiba.com/" target="_blank") 南関東4競馬場HP
+                                                            | をレスポンシブ(PCとスマホ対応)へリニューアル
+                                                        .detail.mt-4
+                                                            small 
+                                                                | バックエンドとフロントエンド両方を開発しました。
+                                                                br
+                                                                | 具体的なバックエンドとフロントエンドの開発範囲は以下になります。
+                                                                ul
+                                                                    li バックエンド：javaとSQL(selectのみ)でフロントエンドに返すデータの生成
+                                                                    li フロントエンド：デザインチームが作成したhtmlをVelocity(フロントエンドテンプレート)で修正
+                                                                | 私は以下の画面を担当しました。
+                                                                ul
+                                                                    li 
+                                                                        a(href="https://www.nankankeiba.com/" target="_blank") メインページ
+                                                                    li 
+                                                                        a(href="https://www.nankankeiba.com/odds/202403222019050501.do" target="_blank") オッズ一覧
+                                                                    li 
+                                                                        a(href="https://www.nankankeiba.com/odds_nin/202403222019050501.do#odds" target="_blank") オッズ-人気・高配当順
+                                                                    li 
+                                                                        a(href="https://www.nankankeiba.com/odds_nin_search/2024032220190505.do#odds" target="_blank") オッズ-人気検索
+                                                                    li 
+                                                                        a(href="https://www.nankankeiba.com/odds_bai_search/2024032220190505.do#odds" target="_blank") オッズ検索
+
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                    <div class="ms-2 me-auto">
+                                                    <div class="fw-bold">Subheading</div>
+                                                    Content for list item
+                                                    </div>
+                                                    <span class="badge bg-primary rounded-pill">14</span>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                    <div class="ms-2 me-auto">
+                                                    <div class="fw-bold">Subheading</div>
+                                                    Content for list item
+                                                    </div>
+                                                    <span class="badge bg-primary rounded-pill">14</span>
+                                                </li>
+                                            </ul>
+                                            
                         .flex-shrink-0
                             span.text-primary 2021.01 ~ 
+                        
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
