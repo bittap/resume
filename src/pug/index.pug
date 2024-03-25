@@ -88,55 +88,47 @@ html(lang='en')
                                             button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
                                         .modal-body 
                                             <ul class="list-group">
-                                                <li class="list-group-item">
-                                                    .d-flex
-                                                        div.h5 
-                                                            span 1.
-                                                            | 南関東４競馬場HPのリニューアル
-                                                        div.ms-auto 2023-05-01 ~ 2023-12-31
-                                                    .d-flex.flex-column
-                                                        div 参加工程：SD,PG,PT,IT,ST
-                                                        div スキル：Java、Velocity、Javascript、html、css、postgresql
-                                                        div 
-                                                            | プロジェクト内容：既存の
-                                                            a(href="https://www.nankankeiba.com/" target="_blank") 南関東4競馬場HP
-                                                            | をレスポンシブ(PCとスマホ対応)へリニューアル
-                                                        .detail.mt-4
-                                                            small 
-                                                                | バックエンドとフロントエンド両方を開発しました。
-                                                                br
-                                                                | 具体的なバックエンドとフロントエンドの開発範囲は以下になります。
-                                                                ul
-                                                                    li バックエンド：javaとSQL(selectのみ)でフロントエンドに返すデータの生成
-                                                                    li フロントエンド：デザインチームが作成したhtmlをVelocity(フロントエンドテンプレート)で修正
-                                                                | 私は以下の画面を担当しました。
-                                                                ul
-                                                                    li 
-                                                                        a(href="https://www.nankankeiba.com/" target="_blank") メインページ
-                                                                    li 
-                                                                        a(href="https://www.nankankeiba.com/odds/202403222019050501.do" target="_blank") オッズ一覧
-                                                                    li 
-                                                                        a(href="https://www.nankankeiba.com/odds_nin/202403222019050501.do#odds" target="_blank") オッズ-人気・高配当順
-                                                                    li 
-                                                                        a(href="https://www.nankankeiba.com/odds_nin_search/2024032220190505.do#odds" target="_blank") オッズ-人気検索
-                                                                    li 
-                                                                        a(href="https://www.nankankeiba.com/odds_bai_search/2024032220190505.do#odds" target="_blank") オッズ検索
+                                                - 
+                                                    const projects = [
+                                                        {
+                                                            title: "南関東4競馬場HPのリニューアル",
+                                                            date: "2023-05-01 ~ 2023-12-31",
+                                                            process: "SD,PG,PT,IT,ST",
+                                                            skill: "Java、Velocity、Javascript、html、css、postgresql",
+                                                            overview: "既存の<a href=\"https://www.nankankeiba.com/\" target=\"_blank\">南関東4競馬場HP</a>をレスポンシブ(PCとスマホ対応)へリニューアル",
+                                                            detail: `バックエンドとフロントエンド両方を開発しました。
+                                                                    <br/>
+                                                                    具体的なバックエンドとフロントエンドの開発範囲は以下になります。
+                                                                    <ul>
+                                                                        <li>バックエンド：javaとSQL(selectのみ)でフロントエンドに返すデータの生成</li>
+                                                                        <li>フロントエンド：デザインチームが作成したhtmlをVelocity(フロントエンドテンプレート)で修正</li>
+                                                                    </ul>
+                                                                    私は以下の画面を担当しました。
+                                                                    <ul>
+                                                                        <li><a href="https://www.nankankeiba.com/" target="_blank">メインページ</a></li>
+                                                                        <li><a href="https://www.nankankeiba.com/odds/202403222019050501.do" target="_blank">オッズ一覧</a></li>
+                                                                        <li><a href="https://www.nankankeiba.com/odds_nin/202403222019050501.do#odds" target="_blank">オッズ-人気・高配当順</a></li>
+                                                                        <li><a href="https://www.nankankeiba.com/odds_nin_search/2024032220190505.do#odds" target="_blank">オッズ-人気検索</a></li>
+                                                                        <li><a href="https://www.nankankeiba.com/odds_bai_search/2024032220190505.do#odds" target="_blank">オッズ検索</a></li>
+                                                                    </ul>
+                                                           `
+                                                        }
+                                                    ];
 
-                                                </li>
-                                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                                    <div class="ms-2 me-auto">
-                                                    <div class="fw-bold">Subheading</div>
-                                                    Content for list item
-                                                    </div>
-                                                    <span class="badge bg-primary rounded-pill">14</span>
-                                                </li>
-                                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                                    <div class="ms-2 me-auto">
-                                                    <div class="fw-bold">Subheading</div>
-                                                    Content for list item
-                                                    </div>
-                                                    <span class="badge bg-primary rounded-pill">14</span>
-                                                </li>
+                                                each project, index in projects
+                                                    <li class="list-group-item">
+                                                        .d-flex
+                                                            div.h5 
+                                                                span #{index+1}.
+                                                                | #{project.title}
+                                                            div.ms-auto 2023-05-01 ~ 2023-12-31
+                                                        .d-flex.flex-column
+                                                            div 参加工程：#{project.process}
+                                                            div スキル：#{project.skill}
+                                                            div  プロジェクト内容：!{project.overview}
+                                                            .detail.mt-4
+                                                                small !{project.detail}
+                                                    </li>
                                             </ul>
                                             
                         .flex-shrink-0
