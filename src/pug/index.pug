@@ -76,9 +76,11 @@ html(lang='en')
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
                             h3.mb-0 テクノブレイブ株式会社
-                            .subheading.mb-3 テクニカルリーダー(2023.04 ~)
-                            p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                            .subheading.mb-3 テクニカルリーダー
+                            p 
+                                | 製造を始め、設計に力を入れております。主にJavaを用いたWeb開発が多く、多数のプロジェクト経験を積んでおります。
+                                br
+                                | 2023年4月からはテクニカルリーダーに選ばれ、業務上の課題を発見・解決をリードし、社内へのエンジニア育成の支援を行っております。
                             button.btn.btn-primary.text-light(type="button" data-bs-toggle="modal" data-bs-target="#experience-modal-3") プロジェクトの詳細を開く
                             .modal.fade.modal-dialog-scrollable(id="experience-modal-3" tabindex="-1" aria-labelledby="experience-modal-label" aria-hidden="true")
                                 .modal-dialog.modal-xl
@@ -91,10 +93,35 @@ html(lang='en')
                                                 - 
                                                     const projects = [
                                                         {
+                                                            title: "Teradataマイグレーション",
+                                                            date: "2024-01-01 ~ ",
+                                                            process: "BD,SD",
+                                                            skill: "Jp1、Jenkins、Shell、Apache Spark、hive、Livy、Ranger、Hadoop",
+                                                            contract: "準委任",
+                                                            overview: `Teradata(platform)のデータ容量がもうすぐでいっぱいになる。
+                                                                     <br>
+                                                                   費用激減を図るためにplatformからOSSを使う新システムに移行。`,
+                                                            detail: `方式チームとして参加し、以下の方式設計を担当しました。
+                                                                    <ul>
+                                                                        <li>リリース管理方式</li>
+                                                                        Jenkinsを用いたCI/CDを設計
+                                                                        <li>連携処理方式</li>
+                                                                        外部と内部の通信プロトコルを整理
+                                                                        <li>ログ管理方式</li>
+                                                                        管理対象のログ整理と通知対象のログを整理
+                                                                        <li>処理実績管理方式</li>
+                                                                        処理実績を可視化・管理するための仕組みを作成
+                                                                    </ul>
+                                                                    上記以外にもSparkやHive等の調査を行いました。
+                                                                    
+                                                           `
+                                                        },
+                                                        {
                                                             title: "南関東4競馬場HPのリニューアル",
                                                             date: "2023-05-01 ~ 2023-12-31",
                                                             process: "SD,PG,PT,IT,ST",
                                                             skill: "Java、Velocity、Javascript、html、css、postgresql",
+                                                            contract: "請負",
                                                             overview: "既存の<a href=\"https://www.nankankeiba.com/\" target=\"_blank\">南関東4競馬場HP</a>をレスポンシブ(PCとスマホ対応)へリニューアル",
                                                             detail: `バックエンドとフロントエンド両方を開発しました。
                                                                     <br/>
@@ -112,7 +139,146 @@ html(lang='en')
                                                                         <li><a href="https://www.nankankeiba.com/odds_bai_search/2024032220190505.do#odds" target="_blank">オッズ検索</a></li>
                                                                     </ul>
                                                            `
-                                                        }
+                                                        },
+                                                        {
+                                                            title: "認知症AI診断システム(製品版)",
+                                                            date: "2023-02-01 ~ 2023-04-30",
+                                                            process: "IT",
+                                                            skill: "Java、Javascript、Spring、Aws、PostgreSQL",
+                                                            contract: "請負",
+                                                            role: "<mark>バックエンドリーダー</mark>",
+                                                            overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
+                                                            detail: `
+                                                                    <ul>
+                                                                        <li>バックエンド(Java,Spring,Aws)のバグ対応</li>
+                                                                        <li>フロントエンドのバグ対応のフォロー</li>
+                                                                        <li>バグ原因調査後、対応方針を決めてメンバーに割り振り</li>
+                                                                        <li>コードレビュー</li>
+                                                                    </ul>
+                                                                    
+                                                           `
+                                                        },
+                                                        {
+                                                            title: "PHC 患者ID統合システム構築",
+                                                            date: "2022-12-01 ~ 2023-01-31",
+                                                            process: "PG,PT,IT",
+                                                            skill: "C#、SQL Server、Azure",
+                                                            contract: "請負",
+                                                            overview: `既存各PHCシステムで管理している患者情報を統合するシステムの新規構築`,
+                                                            detail: `ヘルパーメンバーとして参加。
+                                                                    <ul>
+                                                                        <li>API実装</li>
+                                                                        <li>基本設計書にフローチャート追加と修正</li>
+                                                                        <li>単体・結合テスト</li>
+                                                                    </ul>
+                                                                    
+                                                           `
+                                                        },
+                                                        {
+                                                            title: "認知症AI診断システム(製品版)",
+                                                            date: "2022-05-01 ~ 2022-11-31",
+                                                            process: "BD,SD,PG,PT",
+                                                            skill: "Java、Javascript、Spring、Aws、PostgreSQL、Junit、Postman",
+                                                            contract: "請負",
+                                                            overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
+                                                            detail: `
+                                                                    BDとSD
+                                                                    <ul>
+                                                                        <li>Azure -> Aws移行によるAPI修正</li>
+                                                                        <li>新規API設計</li>
+                                                                        <li>AOP設計</li>
+                                                                    </ul>
+                                                                    PG
+                                                                    <ul>
+                                                                        <li>API開発</li>
+                                                                        <li>AOP開発</li>
+                                                                    </ul>
+                                                                    PT
+                                                                    <ul>
+                                                                        <li>Junit,Postmanのテストコード作成</li>
+                                                                        <li>テストコード共通化</li>
+                                                                        <li>カバレッジ100%対応</li>
+                                                                    </ul> 
+                                                           `
+                                                        },
+                                                        {
+                                                            title: "認知症AI診断システム(商用版)",
+                                                            date: "2021-12-01 ~ 2022-04-30",
+                                                            process: "PG,PT,IT",
+                                                            skill: "Java、Javascript、Spring、Aws、PostgreSQL、Junit、Postman",
+                                                            contract: "請負",
+                                                            overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
+                                                            detail: `
+                                                                    <ul>
+                                                                        <li>コアAPI作成</li>
+                                                                        <li>フロントエンドテンプレートの共通処理作成</li>
+                                                                        <li>テストコード作成</li>
+                                                                        <li>バグ対応</li>
+                                                                    </ul> 
+                                                           `
+                                                        },
+                                                        {
+                                                            title: "配送ロボ",
+                                                            date: "2021-09-01 ~ 2021-12-31",
+                                                            process: "PG,PT,IT",
+                                                            skill: "Java、MQTT、Javasript、Spring、PostgreSQL、GCP",
+                                                            contract: "請負",
+                                                            overview: `ロボット・エレベータ制御システムオフィスビルの飲食店から別フロアの会議室まで配膳するロボットの制御システム開発`,
+                                                            detail: `
+                                                                    <ul>
+                                                                        <li>バックエンド全体開発</li>
+                                                                        <li>Mqtt・RestApiによるロボット・エレベータ制御</li>
+                                                                        <li>テストコード作成</li>
+                                                                        <li>テスト</li>
+                                                                    </ul>
+                                                           `
+                                                        },
+                                                        {
+                                                            title: "認知症AI診断システム(治験版)",
+                                                            date: "2021-07-01 ~ 2021-08-31",
+                                                            process: "PG,PT",
+                                                            skill: "Java、Spring、Aws、PostgreSQL、Junit、Postman",
+                                                            contract: "請負",
+                                                            overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
+                                                            detail: `患者と録音したファイルの転送が失敗しないように追加開発 `
+                                                        },
+                                                        {
+                                                            title: "Eセールスマネージャー",
+                                                            date: "2021-05-10 ~ 2021-06-30",
+                                                            process: "PG,PT",
+                                                            skill: "Java、Postman",
+                                                            contract: "準委任",
+                                                            overview: `セールスマネージャーリファクタリング`,
+                                                            detail: `
+                                                                    <ul>
+                                                                        <li>二つのサービスに関するInsert,Update,DeleteのAPI開発</li>
+                                                                        <li>Postmanにて単体テストプログラム作成</li>
+                                                                    </ul>
+                                                            `
+                                                        },
+                                                        {
+                                                            title: "認知症AI診断システム(治験版)",
+                                                            date: "2021-04-14 ~ 2021-05-11",
+                                                            process: "IT",
+                                                            skill: "Java、Spring",
+                                                            contract: "請負",
+                                                            overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
+                                                            detail: `Azureが頻繁に自動再起動するためメモリ上のセッションが切れる不具合修正 `
+                                                        },
+                                                        {
+                                                            title: "災害監視画像コンテンツシステム",
+                                                            date: "2021-02-01 ~ 2021-03-31",
+                                                            process: "PG,PT,IT",
+                                                            skill: "Java、Spring",
+                                                            contract: "請負",
+                                                            overview: `映像コンテンツ配信サーバー開発`,
+                                                            detail: `
+                                                                    <ul>
+                                                                        <li>映像コンテンツ配信、保存、受信API製造</li>
+                                                                        <li>単体テスト仕様書作成及びテスト</li>
+                                                                    </ul>
+                                                            `
+                                                        },
                                                     ];
 
                                                 each project, index in projects
@@ -121,11 +287,14 @@ html(lang='en')
                                                             div.h5 
                                                                 span #{index+1}.
                                                                 | #{project.title}
-                                                            div.ms-auto 2023-05-01 ~ 2023-12-31
+                                                            div.ms-auto #{project.date}
                                                         .d-flex.flex-column
+                                                            if project.role 
+                                                                div 役割：!{project.role}
                                                             div 参加工程：#{project.process}
                                                             div スキル：#{project.skill}
-                                                            div  プロジェクト内容：!{project.overview}
+                                                            div 契約形態：!{project.contract}
+                                                            div プロジェクト内容：!{project.overview}
                                                             .detail.mt-4
                                                                 small !{project.detail}
                                                     </li>
