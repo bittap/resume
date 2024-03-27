@@ -270,13 +270,79 @@ html(lang='en')
                                                 `
                                             },
                                         ]
+                            },
+                            {
+                                company_name: "ジョイクレジット",
+                                company_name_additional: "(※1)",
+                                company_period: "2017.10 ~ 2019.02",
+                                company_overview: `社内の貸出システムの開発と保守を行いました。`,
+                                projects: [
+                                            {       
+                                                title: "貸出システムの開発と保守",
+                                                date: "2017.10 ~ 2019.02",
+                                                skill: "PHP、JAVASCRIPT 、POSTGRESQL",
+                                                contract: "社内開発",
+                                                overview: `社内の貸出システムの開発と保守を行いました。`,
+                                                detail: `
+                                                        <ul>
+                                                            <li>開発</li>
+                                                                <ul>
+                                                                    <li>顧客の等級算出、メニュー権限、社員の実績メニュー、役職と職級による電算要請メニュー、消滅時効メニュー</li>
+                                                                    <li>内部の規定及び法律の変更によるプログラムの修正</li>
+                                                                    <li>利子の変更による口座のまとめ</li>
+                                                                    <li>バッチプログラムの作成</li>
+                                                                </ul>
+                                                            <li>システム関連の問い合わせと不具合対応</li>
+                                                            <li>外部プログラム及び外部取引先管理
+                                                            <li>外部ソフトウェアの企業選定と起案書作成</li>
+                                                            <li>クエリを用いた要請資料の作成</li>
+                                                                <ul>
+                                                                    <li>年齢、性別、職種別などの貸出金、償還金などの資料の作成</li>
+                                                                    <li>マーケティング及び会社の運営の為の統計資料作成</li>
+                                                                </ul>
+                                                        </ul>  
+                                                `
+                                            },
+                                ]
+                            },
+                            {
+                                company_name: "名利株式会社",
+                                company_name_additional: "(※1)",
+                                company_period: "2016.10 ~ 2017.10",
+                                company_overview: `ネット通販プラットフォームの開発`,
+                                projects: [
+                                            {       
+                                                title: "Teradataマイグレーション",
+                                                date: "2024-01-01 ~ ",
+                                                process: "BD,SD",
+                                                skill: "Jp1、Jenkins、Shell、Apache Spark、hive、Livy、Ranger、Hadoop",
+                                                contract: "準委任",
+                                                overview: `Teradata(platform)のデータ容量がもうすぐでいっぱいになる。
+                                                            <br>
+                                                        費用激減を図るためにplatformからOSS(Open Source Software)を使う新システムに移行。`,
+                                                detail: `方式チームとして参加し、以下の方式設計を担当しました。
+                                                        <ul>
+                                                            <li>リリース管理方式</li>
+                                                            CI・CDを伴うリリースの設計
+                                                            <li>連携処理方式</li>
+                                                            外部と内部の連携方法を整理
+                                                            <li>ログ管理方式</li>
+                                                            管理対象のログ整理と通知対象のログを整理
+                                                            <li>処理実績管理方式</li>
+                                                            処理実績を可視化・管理するための仕組みを作成
+                                                        </ul>
+                                                        上記以外にもSparkやHive等の調査を行いました。
+                                                        
+                                                `
+                                            },
+                                ]
                             }
                         ]
 
                     each experience, experienceIndex in experiences
                         .d-flex.flex-column.flex-md-row.justify_content-between.mb-5
                             .flex-grow-1
-                                h3.mb-0 #{experience.company_name}
+                                h3.mb-0 #{experience.company_name}#{experience.company_name_additional}
                                 .subheading.mb-3 #{experience.company_role}
                                 p !{experience.company_overview} 
                                 <button class="btn btn-primary text-light" type="button" data-bs-toggle="modal" data-bs-target="#experience-modal-#{experienceIndex}">プロジェクトの詳細を開く</button>
@@ -284,7 +350,7 @@ html(lang='en')
                                     .modal-dialog.modal-xl
                                         .modal-content
                                             .modal-header
-                                                h1.modal-title.fs-5.Modal#experience-modal-label テクノブレイブ株式会社のプロジェクト詳細
+                                                h1.modal-title.fs-5.Modal#experience-modal-label #{experience.company_name}のプロジェクト詳細
                                                 button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
                                             .modal-body 
                                                 <ul class="list-group">
@@ -299,7 +365,8 @@ html(lang='en')
                                                                 .d-flex.flex-column
                                                                     if project.role 
                                                                         div 役割：!{project.role}
-                                                                    div 参加工程：#{project.process}
+                                                                    if project.process 
+                                                                        div 参加工程：#{project.process}
                                                                     div スキル：#{project.skill}
                                                                     div 契約形態：!{project.contract}
                                                                     div プロジェクト概要：!{project.overview}
@@ -311,26 +378,7 @@ html(lang='en')
                                 </div>                
                             .flex-shrink-0
                                 span.text-primary #{experience.company_period}
-                        
 
-                    .d-flex.flex-column.flex-md-row.justify_content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 ジョイクレジット(※1)
-                            .subheading.mb-3 
-                            p
-                                | 【消費者金融貸出システム】
-                        .flex-shrink-0
-                            span.text-primary 2017.10 ~ 2019.02
-
-                    .d-flex.flex-column.flex-md-row.justify_content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 名利株式会社(※1)
-                            .subheading.mb-3 
-                            p
-                                | 【ネット通販プラットフォームの開発】
-                        .flex-shrink-0
-                            span.text-primary 2016.10 ~ 2017.10
-                    
                     small ※1 韓国の会社
 
             hr.m-0
