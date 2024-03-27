@@ -100,13 +100,13 @@ html(lang='en')
                                                             contract: "準委任",
                                                             overview: `Teradata(platform)のデータ容量がもうすぐでいっぱいになる。
                                                                      <br>
-                                                                   費用激減を図るためにplatformからOSSを使う新システムに移行。`,
+                                                                   費用激減を図るためにplatformからOSS(Open Source Software)を使う新システムに移行。`,
                                                             detail: `方式チームとして参加し、以下の方式設計を担当しました。
                                                                     <ul>
                                                                         <li>リリース管理方式</li>
-                                                                        Jenkinsを用いたCI/CDを設計
+                                                                        CI・CDを伴うリリースの設計
                                                                         <li>連携処理方式</li>
-                                                                        外部と内部の通信プロトコルを整理
+                                                                        外部と内部の連携方法を整理
                                                                         <li>ログ管理方式</li>
                                                                         管理対象のログ整理と通知対象のログを整理
                                                                         <li>処理実績管理方式</li>
@@ -148,9 +148,8 @@ html(lang='en')
                                                             contract: "請負",
                                                             role: "<mark>バックエンドリーダー</mark>",
                                                             overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
-                                                            detail: `
-                                                                    <ul>
-                                                                        <li>バックエンド(Java,Spring,Aws)のバグ対応</li>
+                                                            detail: `<ul>
+                                                                        <li>バックエンドのバグ対応</li>
                                                                         <li>フロントエンドのバグ対応のフォロー</li>
                                                                         <li>バグ原因調査後、対応方針を決めてメンバーに割り振り</li>
                                                                         <li>コードレビュー</li>
@@ -260,10 +259,10 @@ html(lang='en')
                                                             title: "認知症AI診断システム(治験版)",
                                                             date: "2021-04-14 ~ 2021-05-11",
                                                             process: "IT",
-                                                            skill: "Java、Spring",
+                                                            skill: "Java、Spring-session",
                                                             contract: "請負",
                                                             overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
-                                                            detail: `Azureが頻繁に自動再起動するためメモリ上のセッションが切れる不具合修正 `
+                                                            detail: `メモリ上のセッションが切れる不具合をDB上に持たせるように修正 `
                                                         },
                                                         {
                                                             title: "災害監視画像コンテンツシステム",
@@ -282,22 +281,24 @@ html(lang='en')
                                                     ];
 
                                                 each project, index in projects
-                                                    <li class="list-group-item">
-                                                        .d-flex
-                                                            div.h5 
-                                                                span #{index+1}.
-                                                                | #{project.title}
-                                                            div.ms-auto #{project.date}
-                                                        .d-flex.flex-column
-                                                            if project.role 
-                                                                div 役割：!{project.role}
-                                                            div 参加工程：#{project.process}
-                                                            div スキル：#{project.skill}
-                                                            div 契約形態：!{project.contract}
-                                                            div プロジェクト内容：!{project.overview}
-                                                            .detail.mt-4
-                                                                small !{project.detail}
-                                                    </li>
+                                                    div.project-wrap
+                                                        <li class="list-group-item">
+                                                            .d-flex
+                                                                div.h5 
+                                                                    span #{index+1}.
+                                                                    | #{project.title}
+                                                                div.ms-auto #{project.date}
+                                                            .d-flex.flex-column
+                                                                if project.role 
+                                                                    div 役割：!{project.role}
+                                                                div 参加工程：#{project.process}
+                                                                div スキル：#{project.skill}
+                                                                div 契約形態：!{project.contract}
+                                                                div プロジェクト概要：!{project.overview}
+                                                                .detail.mt-4
+                                                                    div プロジェクト内容
+                                                                    div.content.ms-3 !{project.detail}
+                                                        </li>
                                             </ul>
                                             
                         .flex-shrink-0
@@ -306,7 +307,7 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 ジョイクレジット(韓国の会社)
+                            h3.mb-0 ジョイクレジット(※1)
                             .subheading.mb-3 
                             p
                                 | 【消費者金融貸出システム】
@@ -315,12 +316,14 @@ html(lang='en')
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 名利株式会社(韓国の会社)
+                            h3.mb-0 名利株式会社(※1)
                             .subheading.mb-3 
                             p
                                 | 【ネット通販プラットフォームの開発】
                         .flex-shrink-0
                             span.text-primary 2016.10 ~ 2017.10
+                    
+                    small ※1 韓国の会社
 
             hr.m-0
 
