@@ -275,14 +275,14 @@ html(lang='en')
                                 company_name: "ジョイクレジット",
                                 company_name_additional: "(※1)",
                                 company_period: "2017.10 ~ 2019.02",
-                                company_overview: `社内の貸出システムの開発と保守を行いました。`,
+                                company_overview: `日本のアコムのような韓国会社で<a href="https://www.joycredit.co.kr/" target="_blank">外部サイト</a>と社内のプログラムの開発と保守を行いました。`,
                                 projects: [
                                             {       
                                                 title: "貸出システムの開発と保守",
                                                 date: "2017.10 ~ 2019.02",
                                                 skill: "PHP、JAVASCRIPT 、POSTGRESQL",
                                                 contract: "社内開発",
-                                                overview: `社内の貸出システムの開発と保守を行いました。`,
+                                                overview: `外部サイトと社内の貸出システムの開発と保守`,
                                                 detail: `
                                                         <ul>
                                                             <li>開発</li>
@@ -309,32 +309,42 @@ html(lang='en')
                                 company_name: "名利株式会社",
                                 company_name_additional: "(※1)",
                                 company_period: "2016.10 ~ 2017.10",
-                                company_overview: `ネット通販プラットフォームの開発`,
+                                company_overview: `ホームページと通販サイトの制作をしてくれるシステムの開発と保守。`,
                                 projects: [
                                             {       
-                                                title: "Teradataマイグレーション",
-                                                date: "2024-01-01 ~ ",
-                                                process: "BD,SD",
-                                                skill: "Jp1、Jenkins、Shell、Apache Spark、hive、Livy、Ranger、Hadoop",
-                                                contract: "準委任",
-                                                overview: `Teradata(platform)のデータ容量がもうすぐでいっぱいになる。
-                                                            <br>
-                                                        費用激減を図るためにplatformからOSS(Open Source Software)を使う新システムに移行。`,
-                                                detail: `方式チームとして参加し、以下の方式設計を担当しました。
+                                                title: "サイトおよび通販サイトの制作",
+                                                date: "2016.10 ~ 2017.10",
+                                                skill: "Php、Javascript、MySql",
+                                                contract: "社内開発",
+                                                overview: ``,
+                                                detail: `
+                                                    <ul>
+                                                        <li>デザインチームから受け取ったHTMLをシステムを用いて開発し、お客様に提供</li>
                                                         <ul>
-                                                            <li>リリース管理方式</li>
-                                                            CI・CDを伴うリリースの設計
-                                                            <li>連携処理方式</li>
-                                                            外部と内部の連携方法を整理
-                                                            <li>ログ管理方式</li>
-                                                            管理対象のログ整理と通知対象のログを整理
-                                                            <li>処理実績管理方式</li>
-                                                            処理実績を可視化・管理するための仕組みを作成
+                                                            <li>通販サイトの開発</li>
+                                                                <ul>
+                                                                    <li><a href="http://a-design.kr/" target="_blank">通販サイトのテンプレート販売</a></li>
+                                                                    <li><a href="http://commaxbc0001.co.kr/type6/index/index.htm" target="_blank">ドアロック</a></li>
+                                                                    <li><a href="http://www.aircon007.com/type6/index/index.htm" target="_blank">電気製品</a></li>
+                                                                    等
+                                                                </ul>
+                                                            <li>企業ホームページの開発</li>
+                                                                <ul>
+                                                                    <li><a href="http://www.howon-hospital.co.kr/" target="_blank">病院</a></li>
+                                                                    <li><a href="http://myungli.com" target="_blank">名利株式会社</a></li>
+                                                                    <li><a href="http://www.chamlove.org" target="_blank">教会</a></li>
+                                                                    等
+                                                                </ul>
                                                         </ul>
-                                                        上記以外にもSparkやHive等の調査を行いました。
-                                                        
+                                                        システム中で吸収できない機能は開発し、システムのバージョンアップを行いました。
+                                                        <li>デザインチームから受け取ったHTMLをシステムを用いて開発し、お客様に提供</li>
+                                                        <li>決済APIを通して決済システムとの連係</li>
+                                                        <li>割引クーポン機能の開発</li>
+                                                        <li>ホームページに関わる顧客からの問い合わせ、電話対応 及びエラー修正</li>
+                                                    </ul>
                                                 `
                                             },
+                                            
                                 ]
                             }
                         ]
@@ -357,11 +367,11 @@ html(lang='en')
                                                     each project, projectIndex in experience.projects
                                                         div.project-wrap
                                                             <li class="list-group-item">
-                                                                .d-flex
-                                                                    div.h5 
+                                                                .d-flex.flex-column.flex-md-row
+                                                                    div.h6 
                                                                         span #{projectIndex+1}.
                                                                         | #{project.title}
-                                                                    div.ms-auto #{project.date}
+                                                                    div.ms-md-auto #{project.date}
                                                                 .d-flex.flex-column
                                                                     if project.role 
                                                                         div 役割：!{project.role}
@@ -372,7 +382,7 @@ html(lang='en')
                                                                     div プロジェクト概要：!{project.overview}
                                                                     .detail.mt-4
                                                                         div プロジェクト内容
-                                                                        div.content.ms-3 !{project.detail}
+                                                                        div.content.ms-1.ms-md-3 !{project.detail}
                                                             </li>
                                                 </ul>
                                 </div>                
