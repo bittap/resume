@@ -41,6 +41,14 @@ section#skills {
     section.resume-section {
         min-height: 100vh;
     }
+
+
+}
+
+@include media-breakpoint-down(md) {
+    section.resume-section#experience .modal-dialog {
+        font-size: 0.9rem;
+    }
 }
 
 @include media-breakpoint-up(lg) {
