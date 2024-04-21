@@ -111,7 +111,7 @@ html(lang='en')
                                                 date: "2024-01-01 ~ ",
                                                 process: "BD,SD",
                                                 skill: "Jp1、Jenkins、Shell、Apache Spark、hive、Livy、Ranger、Hadoop",
-                                                contract: "準委任",
+                                                contract: "SES",
                                                 overview: `Teradata(platform)のデータ容量がもうすぐでいっぱいになる。
                                                             <br>
                                                         費用激減を図るためにplatformからOSS(Open Source Software)を使う新システムに移行。`,
@@ -126,9 +126,8 @@ html(lang='en')
                                                             <li>処理実績管理方式</li>
                                                             処理実績を可視化・管理するための仕組みを作成
                                                         </ul>
-                                                        上記以外にもSparkやHive等の調査を行いました。
-                                                        
-                                                `
+                                                        上記以外にもSparkやHive等の調査を行いました。`,
+                                                etc: `現システムの移行作業だったため、他のチーム(運用チーム、現行チーム、業務チーム)と会話しながら、検討して仕様を決めることが多かったです。現システムと新システムの知識について把握するように頑張っていたため、他チームと上手くコミュニケーションを取れるのができて問題なく、方式設計書の執筆が進んだと思います。`  
                                             },
                                             {
                                                 title: "南関東4競馬場HPのリニューアル",
@@ -151,8 +150,8 @@ html(lang='en')
                                                             <li><a href="https://www.nankankeiba.com/odds_nin/202403222019050501.do#odds" target="_blank">オッズ-人気・高配当順</a></li>
                                                             <li><a href="https://www.nankankeiba.com/odds_nin_search/2024032220190505.do#odds" target="_blank">オッズ-人気検索</a></li>
                                                             <li><a href="https://www.nankankeiba.com/odds_bai_search/2024032220190505.do#odds" target="_blank">オッズ検索</a></li>
-                                                        </ul>
-                                                `
+                                                        </ul>`,
+                                                etc: `本プロジェクトの中で一番変更内容が多くて難しいメインページを担当し、完成まで色々問題がありましたが、やり遂げました。`
                                             },
                                             {
                                                 title: "認知症AI診断システム(製品版)",
@@ -167,9 +166,8 @@ html(lang='en')
                                                             <li>フロントエンドのバグ対応のフォロー</li>
                                                             <li>バグ原因調査後、対応方針を決めてメンバーに割り振り</li>
                                                             <li>コードレビュー</li>
-                                                        </ul>
-                                                        
-                                                `
+                                                        </ul>`,
+                                                etc: `バックエンドチームは私含めて4人で小人数だったのですが、リーダーとしてチームをよくまとめて品質がいいプログラムの納品ができたと思います。`
                                             },
                                             {
                                                 title: "PHC 患者ID統合システム構築",
@@ -183,9 +181,8 @@ html(lang='en')
                                                             <li>API実装</li>
                                                             <li>基本設計書にフローチャート追加と修正</li>
                                                             <li>単体・結合テスト</li>
-                                                        </ul>
-                                                        
-                                                `
+                                                        </ul>`,
+                                                etc: `C#は初めてでヘルパーとして呼ばれました。逼迫していたプロジェクトだったため、プロジェクトに入ったばかりですぐコードを書かないといけなかったです。しかも、詳細設計書が存在せず具体的な実装方法は自分が探すしかなかったです。実装に必要なスキルC#二日、ASP.NET * Entity Frame Work 二つ勉強して4日くらいでAPI22個を作って期間内に開発を完了しました。`
                                             },
                                             {
                                                 title: "認知症AI診断システム(製品版)",
@@ -211,7 +208,13 @@ html(lang='en')
                                                             <li>Junit,Postmanのテストコード作成</li>
                                                             <li>テストコード共通化</li>
                                                             <li>カバレッジ100%対応</li>
-                                                        </ul> 
+                                                        </ul>`,
+                                                etc: `ログ出力は個々に実装する想定だったのです。しかし、その場合工数が高くなったり、保守性が低くなったりすることが懸念されました。その際、AOPを利用し、共通ログ出力を提案し、リーダーに承認され、投入しました。投入結果、開発工数を大幅に激減することができました。				
+                                                    <br>以下のことを行い、テストコードを改善しました。	
+                                                    <ul>
+                                                    <li>共通メータアノテーションの作成</li>			
+                                                    <li>テスト時不要なコードや処理が多かったため、簡略にinput, outputのテストができるようなサンプルを作って提案しました。</li>
+                                                    </ul>
                                                 `
                                             },
                                             {
@@ -227,8 +230,8 @@ html(lang='en')
                                                             <li>フロントエンドテンプレートの共通処理作成</li>
                                                             <li>テストコード作成</li>
                                                             <li>バグ対応</li>
-                                                        </ul> 
-                                                `
+                                                        </ul> `,
+                                                etc: `本システムで一番肝心なところは、AI判定に使うための録音関連APIです。録音関連のAPI担当として開発を行いました。`
                                             },
                                             {
                                                 title: "配送ロボ",
@@ -243,8 +246,13 @@ html(lang='en')
                                                             <li>Mqtt・RestApiによるロボット・エレベータ制御</li>
                                                             <li>テストコード作成</li>
                                                             <li>テスト</li>
-                                                        </ul>
-                                                `
+                                                        </ul>`,
+                                                etc: `本システムでは以下のところが他のプロジェクトと異なりました。
+                                                    <ul>
+                                                        <li>MQTTによる通信</li>
+                                                        <li>並列実行処理</li>
+                                                    </ul>
+                                                    上記についてあまり知識がなかったのですが、プロジェクト中、常に勉強する等取り組みを入れて問題なく、実装できました。`
                                             },
                                             {
                                                 title: "認知症AI診断システム(治験版)",
@@ -253,21 +261,22 @@ html(lang='en')
                                                 skill: "Java、Spring、Aws、PostgreSQL、Junit、Postman",
                                                 contract: "請負",
                                                 overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
-                                                detail: `患者と録音したファイルの転送が失敗しないように追加開発 `
+                                                detail: `患者と録音したファイルの転送が失敗しないように追加開発 `,
+                                                etc: `お客様が一番重要だと思っているところでネットワーク通信問題で録音ファイルの転送が失敗するケースが発生しました。それを防ぐための開発を行い、製造として参加したのですが、設計のみ多くかかわりました。`
                                             },
                                             {
                                                 title: "Eセールスマネージャー",
                                                 date: "2021-05-10 ~ 2021-06-30",
                                                 process: "PG,PT",
                                                 skill: "Java、Postman",
-                                                contract: "準委任",
+                                                contract: "SES",
                                                 overview: `セールスマネージャーリファクタリング`,
                                                 detail: `
                                                         <ul>
                                                             <li>二つのサービスに関するInsert,Update,DeleteのAPI開発</li>
                                                             <li>Postmanにて単体テストプログラム作成</li>
-                                                        </ul>
-                                                `
+                                                        </ul>`,
+                                                etc: `各会社がテンプレートなしでPostmanを作成しました。自分の場合、可変なところは変数を使ったりしてもっと修正しやすいpostmanを作ったため、それが最終的にテンプレートになりました。`
                                             },
                                             {
                                                 title: "認知症AI診断システム(治験版)",
@@ -276,7 +285,8 @@ html(lang='en')
                                                 skill: "Java、Spring-session",
                                                 contract: "請負",
                                                 overview: `患者との会話をAIによって診断してくれるWeb認知症AI診断システム`,
-                                                detail: `メモリ上のセッションが切れる不具合をDB上に持たせるように修正 `
+                                                detail: `メモリ上のセッションが切れる不具合をDB上に持たせるように修正`,
+                                                etc: `Spring知識があるメンバーが必要で私が選ばれ、問題の解決に貢献しました。`
                                             },
                                             {
                                                 title: "災害監視画像コンテンツシステム",
@@ -289,13 +299,13 @@ html(lang='en')
                                                         <ul>
                                                             <li>映像コンテンツ配信、保存、受信API製造</li>
                                                             <li>単体テスト仕様書作成及びテスト</li>
-                                                        </ul>
-                                                `
+                                                        </ul>`,
+                                                etc: `日本に来て初のプロジェクトだったのですが、一人で製造を担当し、単体テスト仕様書も作成できました。`
                                             },
                                         ]
                             },
                             {
-                                company_name: "ジョイクレジット",
+                                company_name: "ジョイクレジット株式会社",
                                 company_name_additional: "(※1)",
                                 company_period: "2017.10 ~ 2019.02",
                                 company_overview: `日本のアコムのような消費者金融会社で<a href="https://www.joycredit.co.kr/" target="_blank">外部サイト</a>と社内のプログラムの開発と保守を行いました。`,
@@ -323,8 +333,8 @@ html(lang='en')
                                                                     <li>年齢、性別、職種別などの貸出金、償還金などの資料の作成</li>
                                                                     <li>マーケティング及び会社の運営の為の統計資料作成</li>
                                                                 </ul>
-                                                        </ul>  
-                                                `
+                                                        </ul>`,
+                                                etc: `システム関連の問い合わせや不具合に対して、迅速かつ適切な対応を行いました。また、外部プログラムや取引先とのコミュニケーションも円滑に行いました。`
                                             },
                                 ]
                             },
@@ -364,8 +374,8 @@ html(lang='en')
                                                         <li>決済APIを通して決済システムとの連係</li>
                                                         <li>割引クーポン機能の開発</li>
                                                         <li>ホームページに関わる顧客からの問い合わせ、電話対応 及びエラー修正</li>
-                                                    </ul>
-                                                `
+                                                    </ul>`,
+                                                etc: `システムの担当者として一人でバグ対応・開発・運用全てを管理しました。`
                                             },
                                             
                                 ]
@@ -402,10 +412,15 @@ html(lang='en')
                                                                         div 参加工程：#{project.process}
                                                                     div スキル：#{project.skill}
                                                                     div 契約形態：!{project.contract}
-                                                                    div プロジェクト概要：!{project.overview}
-                                                                    .detail.mt-4
-                                                                        div プロジェクト内容
+                                                                    .detail.mt-2
+                                                                        div プロジェクト概要
+                                                                        div.content.ms-1.ms-md-3 !{project.overview}
+                                                                    .detail.mt-2
+                                                                        div 業務内容
                                                                         div.content.ms-1.ms-md-3 !{project.detail}
+                                                                    .detail.mt-2
+                                                                        div 【実績・取り組み等】
+                                                                        div.content.ms-1.ms-md-3 !{project.etc}
                                                             </li>
                                                 </ul>
                                 </div>                
