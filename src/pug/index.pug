@@ -136,25 +136,27 @@ html(lang='en')
                             } 
                         ]
 
-                    table.table.table-bordered.table-sm
-                        thead.table-light
-                            tr
-                                td(scope="col") 項番
-                                td(scope="col") 会社名
-                                td(scope="col") 契約
-                                td(scope="col") 使用技術
-                                td(scope="col") 役職
-                                td(scope="col") 在職期間
-                        tbody
-                            each experience, experienceIndex in experiences
+                    .div.table-responsive
+                        table.table.table-bordered.table-sm.text-nowrap
+                            thead.table-light
                                 tr
-                                    td(scope="row")  #{experienceIndex+1}
-                                    td #{experience.company_name}#{experience.company_name_additional}
-                                    td #{experience.company_contract}
-                                    td #{experience.company_skill}
-                                    td #{experience.company_role}
-                                    td #{experience.company_period}
-                    div プロジェクト詳細については<a href="./職務経歴書_金太永.docx">こちら</a>をクリックしてワードをダウンロードし、「■ 職務経歴」を参照してください。
+                                    td(scope="col") 項番
+                                    td(scope="col") 会社名
+                                    td(scope="col") 契約
+                                    td(scope="col") 使用技術
+                                    td(scope="col") 役職
+                                    td(scope="col") 在職期間
+                            tbody
+                                each experience, experienceIndex in experiences
+                                    tr
+                                        td(scope="row")  #{experienceIndex+1}
+                                        td #{experience.company_name}#{experience.company_name_additional}
+                                        td #{experience.company_contract}
+                                        td #{experience.company_skill}
+                                        td #{experience.company_role}
+                                        td #{experience.company_period}
+
+                    div.mb-1 プロジェクト詳細については<a href="./職務経歴書_金太永.docx">こちら</a>をクリックしてワードをダウンロードし、「■ 職務経歴」を参照してください。
                     small ※1 韓国の会社
 
             hr.m-0
