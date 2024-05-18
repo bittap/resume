@@ -95,6 +95,22 @@ html(lang='en')
                .resume-section-content
                     h2.mb-5 業務経歴
 
+                    h3.mb-3 職務要約
+                    p.mb-5
+                        | 韓国で名利株式会社入社後、約1年間ホームページと通販サイトの制作をする自社開発プログラム管理者として、開発と保守を行いました。次に、ジョイクレジット株式会社に入社し、消費者金融の外部サイトと社内のプログラムの開発と保守を行いました。
+                        | その後、日本のテクノブレイブ株式会社に就職し(2021年1月)、製造工程から始め、2022年5月ごろからは上流工程に携わり、設計に力を入れております。
+                        | 主にJavaを用いたWeb開発が多く、多数のプロジェクト経験を積んでおります。
+                        | また、少人数ですが、4名規模のバックエンドのリーダーとして、進捗管理やメンバーのマネジメントも経験しました。メンバーへの適切な指示や顧客との調整を行い、システムの品質を向上しながら期日通り納品できています。
+                        | 2023年4月からはテクニカルリーダーに選ばれ、業務上の課題の発見・解決をリードし、社内へのエンジニア育成の支援を行っております。
+
+                    h3.mb-3 活かせる経験・知識・技術
+                    ul.mb-5
+                        li PHP, JavaによるWebアプリケーション開発経験
+                        li 開発コードとテストコードにおける、改善の経験
+                        li 個人開発または資格証取得等の自己啓発能力
+                        li ユーザ向けにWebアプリケーションを運用した経験（個人開発）
+                        li 個人開発で得た経験を提案し、問題改善に繋げた経験
+
                     -
                         const experiences = [
                             {
@@ -103,142 +119,6 @@ html(lang='en')
                                 company_contract: "請負、SES",
                                 company_skill: "Java、PostgreSQL、Spring等",
                                 company_period: "2021.01 ~ 現在",
-                                projects: [
-                                            {
-                                                title: "Teradataマイグレーション",
-                                                date: "2024-01-01 ~ 現在",
-                                                process: "基本設計、詳細設計",
-                                                skill: "Jenkins、Shell、Apache Spark、hive",
-                                                contract: "SES",
-                                                scale: "全30名メンバー",
-                                                overview: `Teradata(platform)のデータ容量が上限に達しようとしていることから、費用削減を図るためにplatform からOSS(Open Source Software)を使う新システムに移行するプロジェクト。移行に必要な仕組みや問題を検討するために、方式チームとして参画。`,
-                                                detail: `1.方式設計を担当
-                                                        <ul>
-                                                            <li>リース管理方式</li>
-                                                            <li>ログ管理方式</li>
-                                                            <li>処理実績管理方式</li>
-                                                        </ul>
-                                                        2.詳細設計書の中間レビュアー`,
-                                                etc: `移行作業だったため、他のチーム(運用チーム、現行チーム、業務チーム)と議論しながら、仕様を決めることが多かったです。決まっていないことについて、内容を整理し、積極的に他のチームとコミュニケーションを取りながら、仕様を決めていきました。また、システム全般的に広い視野を持つ能力が認められ、詳細設計書では、中間レビュアーになりました。`  
-                                            },
-                                            {
-                                                title: "南関東4競馬場HPのリニューアル",
-                                                date: "2023-05-01 ~ 2023-12-31",
-                                                process: "詳細設計、開発、単体テスト、結合テスト",
-                                                skill: "Java、Javascript、HTML、CSS、PostgreSQL、Velocity",
-                                                contract: "請負",
-                                                scale: "全50名メンバー",
-                                                overview: "既存の<a href=\"https://www.nankankeiba.com/\" target=\"_blank\">南関東4競馬場HP</a>をレスポンシブ(PCとスマホ対応)へリニューアル",
-                                                detail: `
-                                                        <ul>
-                                                            <li>バックエンド&フロントエンドの画面設計と開発</li>
-                                                            <li>テストで見つかったバグの修正</li>
-                                                        </ul>
-                                                        `,
-                                                etc: `改修が多い、機能が複雑なメインページを担当しました。体制の問題でバグが多くて遅延が発生しましたが、問題について、他チームとコミュニケーションしながら、問題を特定し、問題解決に取り込み、完成できました。`
-                                            },
-                                            {
-                                                title: "認知症AI診断システム(製品版)",
-                                                date: "2023-02-01 ~ 2023-04-30",
-                                                process: "IT",
-                                                skill: "Java、Javascript、Spring、Aws、PostgreSQL",
-                                                contract: "請負",
-                                                scale: "全10名の内、4人のバックエンドリーダー",
-                                                role: "<mark>バックエンドリーダー</mark>",
-                                                overview: `患者との会話をAIによって診断してくれる製品版のWeb認知症AI診断システムの結合テスト。`,
-                                                detail: `<ul>
-                                                            <li>バックエンドのバグ対応</li>
-                                                            <li>フロントエンドのバグ対応のフォロー</li>
-                                                            <li>顧客からの問い合わせ、トラブル対応</li>
-                                                            <li>コードレビュー</li>
-                                                            <li>カバレッジ100%対応</li>
-                                                            <li>Bug spotsのバグ対応</li>
-                                                            <li>問題改善にQuery DSLを取り入れ</li>
-                                                        </ul>`,
-                                                etc: `プロジェクトにおいて、バックエンドだけでなくフロントエンドのバグにも深く関与し、貢献しました。プロジェクト全体の構造や機能について幅広い知識を持ち、その知識を活かして問題解決に努めました。また、リーダーとして、明確な指示を与えることに重点を置き、チームメンバーがスムーズに作業できるようサポートしました。この取り組みにより、結合テストの進行が円滑化され、プロジェクトの成功に寄与できたと考えています。`
-                                            },
-                                            {
-                                                title: "PHC 患者ID統合システム構築",
-                                                date: "2022-12-01 ~ 2023-01-31",
-                                                process: "開発",
-                                                skill: "C#、SQL Server、ASP.NET",
-                                                contract: "請負",
-                                                scale: "全10名のメンバー",
-                                                overview: `既存各PHCシステムで管理している患者情報を統合するシステムの新規構築。ヘルパーとして参加し、C#とASP.NETについて、初めてだったのですが、JavaとSpringの知識を活かし、APIを約15個ほどを作って期間内に工程を完了しました。`
-                                            },
-                                            {
-                                                title: "認知症AI診断システム(製品版)",
-                                                date: "2022-05-01 ~ 2022-11-31",
-                                                process: "基本設計、詳細設計、開発、単体テスト",
-                                                skill: "Java、Javascript、Spring、Aws、PostgreSQL、Junit",
-                                                contract: "請負",
-                                                scale: "全20名のメンバー",
-                                                overview: `患者との会話をAIによって診断してくれる製品版のWeb認知症AI診断システムの開発`,
-                                                detail: `
-                                                        <ul>
-                                                            <li>API設計と開発</li>
-                                                            <li>ログ実装において、AOP提案・開発</li>
-                                                            <li>テストコード作成</li>
-                                                            <li>テストコード改善によるテストコード時間の短縮 30分->15分</li>
-                                                            <li>フロントエンド開発における、共通テンプレートの作成を提案・主導</li>
-                                                        </ul>`,
-                                                etc: `API設計と開発だけではなく、ログ実装において、AOP提案とテストコード改善による業務改善を図ると共に、共通テンプレート実装を自ら志願し、作業が止まらないように支援しました。`
-                                            },
-                                            {
-                                                title: "認知症AI診断システム(商用版)",
-                                                date: "2021-12-01 ~ 2022-04-30",
-                                                process: "開発、単体テスト、結合テスト",
-                                                skill: "Java、Javascript、Spring、Aws、PostgreSQL、Junit",
-                                                contract: "請負",
-                                                scale: "全20名のメンバー",
-                                                overview: `患者との会話をAIによって診断してくれる商用版のWeb認知症AI診断システムのAPI開発やテストコード作成とテスト`,
-                                            },
-                                            {
-                                                title: "配送ロボ",
-                                                date: "2021-09-01 ~ 2021-12-31",
-                                                process: "開発、単体テスト、結合テスト",
-                                                skill: "Java、MQTT、Spring、PostgreSQL",
-                                                contract: "請負",
-                                                scale: "全20名のメンバー",
-                                                overview: `Web操作でロボットとエレベータを制御し、目的地までロボットが配送をするシステムの開発。並列処理やMQTTを用いたロボット制御、さらにはRest APIを介したエレベータ制御に関する開発と、それに伴うテストコードの作成を担当しました。`,
-                                            },
-                                            {
-                                                title: "認知症AI診断システム(治験版)",
-                                                date: "2021-07-01 ~ 2021-08-31",
-                                                process: "開発、単体テスト",
-                                                skill: "Java、JavaScript、PostgreSQL",
-                                                contract: "請負",
-                                                scale: "全10名のメンバー",
-                                                overview: `患者との会話をAIによって診断してくれる治験版のWeb認知症AI診断システムのコア機能の問題改善`,
-                                            },
-                                            {
-                                                title: "Eセールスマネージャー",
-                                                date: "2021-05-10 ~ 2021-06-30",
-                                                process: "開発、単体テスト",
-                                                skill: "Java、PostgreSQL",
-                                                contract: "SES",
-                                                scale: "全15名のメンバー",
-                                                overview: `セールスマネージャープログラムのアーキテクチャー変更の支援`,
-                                            },
-                                            {
-                                                title: "認知症AI診断システム(治験版)",
-                                                date: "2021-04-14 ~ 2021-05-11",
-                                                process: "結合テスト",
-                                                skill: "Java、Spring-session",
-                                                contract: "請負",
-                                                scale: "全5名のメンバー",
-                                                overview: `患者との会話をAIによって診断してくれる治験版のWeb認知症AI診断システムのバグ改修。セッションの保持場所をメモリからDBに変更しました。`,
-                                            },
-                                            {
-                                                title: "災害監視画像コンテンツシステム",
-                                                date: "2021-02-01 ~ 2021-03-31",
-                                                process: "開発、単体テスト、結合テスト",
-                                                skill: "Java、PostgreSQL",
-                                                contract: "請負",
-                                                scale: "全20名のメンバー",
-                                                overview: `映像コンテンツ配信サーバーのAPI開発や単体テスト仕様書作成とテスト`,
-                                            },
-                                        ]
                             },
                             {
                                 company_name: "ジョイクレジット株式会社",
@@ -255,22 +135,6 @@ html(lang='en')
                                 company_period: "2016.10 ~ 2017.10",
                             } 
                         ]
-
-                    h3.mb-3 職務要約
-                    p.mb-5
-                        | 韓国で名利株式会社入社後、約1年間ホームページと通販サイトの制作をする自社開発プログラム管理者として、開発と保守を行いました。次に、ジョイクレジット株式会社に入社し、消費者金融の外部サイトと社内のプログラムの開発と保守を行いました。
-                        | その後、日本のテクノブレイブ株式会社に就職し(2021年1月)、製造工程から始め、2022年5月ごろからは上流工程に携わり、設計に力を入れております。
-                        | 主にJavaを用いたWeb開発が多く、多数のプロジェクト経験を積んでおります。
-                        | また、少人数ですが、4名規模のバックエンドのリーダーとして、進捗管理やメンバーのマネジメントも経験しました。メンバーへの適切な指示や顧客との調整を行い、システムの品質を向上しながら期日通り納品できています。
-                        | 2023年4月からはテクニカルリーダーに選ばれ、業務上の課題の発見・解決をリードし、社内へのエンジニア育成の支援を行っております。
-
-                    h3.mb-3 活かせる経験・知識・技術
-                    ul.mb-5
-                        li PHP, JavaによるWebアプリケーション開発経験
-                        li 開発コードとテストコードにおける、改善の経験
-                        li 個人開発または資格証取得等の自己啓発能力
-                        li ユーザ向けにWebアプリケーションを運用した経験（個人開発）
-                        li 個人開発で得た経験を提案し、問題改善に繋げた経験
 
                     table.table.table-bordered.table-sm
                         thead.table-light
@@ -290,7 +154,7 @@ html(lang='en')
                                     td #{experience.company_skill}
                                     td #{experience.company_role}
                                     td #{experience.company_period}
-                    div プロジェクト詳細については<a href="./職務経歴書_金太永.docx">ワード</a>をクリックしてダウンロードし、「■ 職務経歴」を参照してください。
+                    div プロジェクト詳細については<a href="./職務経歴書_金太永.docx">こちら</a>をクリックしてワードをダウンロードし、「■ 職務経歴」を参照してください。
                     small ※1 韓国の会社
 
             hr.m-0
@@ -349,14 +213,6 @@ html(lang='en')
                             figure.figure
                                 i.fab.fa-aws
                                 figcaption.figure-caption.text-center aws
-                        li.list-inline-item
-                            figure.figure
-                                img(src='assets/img/maven.svg' alt="maven")
-                                figcaption.figure-caption.text-center maven
-                        li.list-inline-item
-                            figure.figure
-                                img(src='assets/img/postman.svg' alt="postman")
-                                figcaption.figure-caption.text-center postman
 
             hr.m-0
 
@@ -399,7 +255,7 @@ html(lang='en')
                         .flex-grow-1
                             h3.mb-0 
                                 a(href='http://watchfix.co.kr/' target="_blank") ワッチフィックス
-                            div 知人の依頼で作ったサイトで時計の修理に関する問い合わせができます。<br>知人の要件を一番簡単に実現できる技術として、WordPressを選定し、一週間で作りました。
+                            div 知人の依頼で作ったサイトで時計の修理に関する問い合わせができます。<br>知人の要件を一番簡単に実現できる技術としてWordPressを選定し、一週間で作りました。
                         .flex-shrink-0
                             span.text-primary 2023.5 ~ 2023.5
 
