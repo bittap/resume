@@ -117,20 +117,23 @@ html(lang='en')
                                 company_name: "テクノブレイブ株式会社",
                                 company_role: "テクニカルリーダー",
                                 company_contract: "請負、SES",
+                                company_address: "日本",
                                 company_skill: "Java、PostgreSQL、Spring等",
                                 company_period: "2021.01 ~ 現在",
                             },
                             {
                                 company_name: "ジョイクレジット株式会社",
-                                company_name_additional: "(※1)",
+                                company_role: "-",
                                 company_contract: "自社開発",
+                                company_address: "韓国",
                                 company_skill: "PHP、PostgreSQL",
                                 company_period: "2017.10 ~ 2019.02",
                             },
                             {
                                 company_name: "名利株式会社",
-                                company_name_additional: "(※1)",
+                                company_role: "-",
                                 company_contract: "自社開発",
+                                company_address: "韓国",
                                 company_skill: "PHP、MySQL",
                                 company_period: "2016.10 ~ 2017.10",
                             } 
@@ -142,6 +145,7 @@ html(lang='en')
                                 tr
                                     td(scope="col") 項番
                                     td(scope="col") 会社名
+                                    td(scope="col") 会社本拠地
                                     td(scope="col") 契約
                                     td(scope="col") 使用技術
                                     td(scope="col") 役職
@@ -150,14 +154,14 @@ html(lang='en')
                                 each experience, experienceIndex in experiences
                                     tr
                                         td(scope="row")  #{experienceIndex+1}
-                                        td #{experience.company_name}#{experience.company_name_additional}
+                                        td #{experience.company_name}
+                                        td #{experience.company_address}
                                         td #{experience.company_contract}
                                         td #{experience.company_skill}
                                         td #{experience.company_role}
                                         td #{experience.company_period}
 
                     div.mb-1 プロジェクト詳細については<a href="./assets/document/職務経歴書_金太永.pdf" target="_blank">職務経歴書_金太永.pdf</a>をクリックし、章「■ 職務経歴」を参照してください。
-                    small ※1 韓国の会社
 
             hr.m-0
 
